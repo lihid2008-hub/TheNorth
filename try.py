@@ -13,10 +13,20 @@ st.markdown("<h3 style='text-align: center; color: black;'>תכננו את הט�
 
 
 
-if st.button("עגלות קפה ומסעדות"):
-  open(restcoffe)
+if st.button("עגלות קפה ומסעדות",type = "primary",icon="🍽️",width = "stretch"):
+  st.switch_page(restcoffe)
 
+if st.button("התנדבויות" ,type = "primary", icon="🧑‍🌾",width = "stretch"):
+  st.switch_page(restcoffe)
 
+if st.button("טיולים ומצפים",type = "primary", icon="🗺️",width = "stretch"):
+  st.switch_page(restcoffe)
+
+if st.button("אחר",type = "primary", icon="🎉",width = "stretch"):
+  st.switch_page(restcoffe)
+
+if st.button("תכנן את היום שלנו!",type = "primary", icon="📆",width = "stretch"):
+  st.switch_page(restcoffe)
 
 
 
