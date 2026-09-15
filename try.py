@@ -1,20 +1,20 @@
 import streamlit as st
 from PIL import Image  # Import Image from Pillow
+import restcoffe
 import pandas as pd
 
+# st.markdown("<h1 style='text-align: center; color: black;'>מצפינים</h1>", unsafe_allow_html=True)
 
 img = Image.open("Gemini_Generated_Image_jch7jhjch7jhjch7.jpg") # Open the image file
 st.image(img, width=1000) # Display the image with a specified width
-st.header("מצפינים")
-st.subheader("מחזקים-ציונות-ישראלית")
-st.write("תכננו את הטיול המושלם לצפון, מחזירים את הצפון לחיים!")
+st.markdown("<h2 style='text-align: center; color: black;'>מחזקים-ציונות-ישראלית</h2>", unsafe_allow_html=True)
+
+st.markdown("<h3 style='text-align: center; color: black;'>תכננו את הטיול המושלם לצפון, מחזירים את הצפון לחיים!</h3>", unsafe_allow_html=True)
 
 
-name = st.text_input("Enter your name")
 
-if st.button("Submit"):
-  st.write(f"Hello {name}, lets start planning!")
-
+if st.button("עגלות קפה ומסעדות"):
+  open(restcoffe)
 
 
 
